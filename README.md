@@ -22,8 +22,10 @@ to the require section of your `composer.json` file.
 
 Query Scope
 ----------
-`QueryScopeBehavior` will automatically attached to `ActiveQuery` via `Yii::$container`. You can use this behavior to
-create query scope from `ActiveRecord`.
+`QueryScopeBehavior` will automatically attached to `ActiveQuery` via `Yii::$container`. 
+This was done by Composer extra/bootstrap in composer.json file and Yii2 will load it during application botstrap proccess.
+
+You can use this behavior to create query scope from `ActiveRecord`.
 
 ```php
 class Sales extends ActiveRecord
